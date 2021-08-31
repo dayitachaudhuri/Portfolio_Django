@@ -19,9 +19,9 @@
   </head>
   <body>
 	  <!-- Navigation bar-->
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 		<div class="container-fluid">
-		  <a class="navbar-brand" href="">Home</a>
+		  <a class="navbar-brand" href="\home">Home</a>
 		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		  </button>
@@ -42,10 +42,11 @@
 				</ul>
 			  </li>
 			  <li class="nav-item">
-				<a class="nav-link disables" href="">References</a>
+				<a class="nav-link disabled" href="#">References </a>
 			  </li>
+
 			  <li class="nav-item">
-				<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Contact Me</button>
+				<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Contact</button>
 				
 				<!-- Contact Button -->
     			<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
@@ -54,8 +55,7 @@
    				 <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
  				 </div>
  				 <div class="offcanvas-body">
-    				<img src="{% static 'images\contact-img.jpg' %}"alt="Contact Image" width="200" height="250" allign='centre'><br>
-					<br>
+    				<img src="{% static 'images\contact-img.jpg' %}"alt="Contact Image" width="200" height="250" allign='centre'><br><br>
 					
 					<a href="https://github.com/dayitachaudhuri" class="btn btn-social-icon btn-github">
 						<span class="fa fa-github"></span></a>
@@ -77,10 +77,13 @@
 					18-TG Road, Kerchowmohani<br>Krishnanagar, Agartala<br>
 					Tripura<br>P.O - 799001<br><br>
 
+					<a href="/contact"><button type="button" class="btn btn-secondary btn-lg btn-block">Redirect to Contact Form</button></a>
+
 					
  				 </div>
 				</div>
 			  </li>
+			
 			</ul>
 			<form class="d-flex">
 			  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
