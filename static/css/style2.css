@@ -3,6 +3,10 @@ body{
     background: linear-gradient( to right,#46457c,#252a5f,#0a0a37);
 }
 
+h1 {text-align: center;}
+h2 {text-align: center;}
+h3 {text-align: center;}
+
 .container{
     display: flex;
     justify-content: center;
